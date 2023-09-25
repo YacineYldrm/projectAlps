@@ -1,0 +1,180 @@
+@font-face {
+    font-family: "cinzel";
+    src: url(./../fonts/Cinzel-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "poppins-lt";
+    src: url(./../fonts/Poppins-Light.ttf);
+}
+
+*
+{
+    block-size: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    font-family: "cinzel", serif;
+    min-width: 1140px;
+}
+
+h1::first-letter, h2::first-letter, footer::first-letter
+{
+    text-transform: uppercase;
+}
+
+h2
+{
+    font-size: 24px;
+    font-weight: 700px;
+    word-wrap: break-word;
+}
+
+/* Header */
+
+h1
+{
+    height: 50px;
+    padding-left: 100px;
+}
+
+h1 a
+{
+    text-decoration: none;
+    color: #999999;
+    font-size: 18px;
+    
+}
+
+/* Hero */
+
+.hero
+{
+    background: url(./../img/Hero-Img.png)  center / cover no-repeat;
+    background-repeat: none;
+    min-height: 700px;
+    display: grid;
+    place-items: center;
+}
+
+.hero > h2
+{
+    color: white;
+    font-size: 50px;
+    font-weight: 700px;
+    word-wrap: break-word;
+
+}
+
+.infos
+{
+    min-height: 350px;
+    text-align: center;
+}
+
+/* Description */
+.infos > h2
+{
+    color: #333333;
+    padding-top: 80px;
+}
+
+.infos > p
+{
+    padding: 60px 150px 0px 150px;
+    color: #333333;
+    font-size: 16px;
+    font-family: "poppins-lt";
+    font-weight: 400px;
+    word-wrap: break-word;
+}
+
+/* Location images */
+
+article > img
+{
+    width: 360px;
+}
+
+article
+{
+    display: flex;
+    justify-content: center;
+    padding: 0px 100px 6px 100px;
+    gap: 75px;
+}
+
+/* Tour dates */
+
+.tour_infos
+{
+    text-align: center;
+    min-height: 375px;
+}
+
+.tour_infos > h2
+{
+    color: #333333;
+    padding-top: 40px;
+}
+
+.tour_infos > ul
+{
+    padding: 40px 150px 0px 150px;
+    list-style: none;
+}
+
+.tour_infos ul li
+{
+    padding-bottom: 16.6px;
+    color: #333333;
+    font-size: 16px;
+    font-family: "poppins-lt";
+    font-weight: 400px;
+    word-wrap: break-word;
+    text-align: left;
+}
+
+.sold_out
+{
+    color: #ff0000;
+}
+
+.available
+{
+    color: #008000
+}
+
+/* Footer */
+
+footer
+{
+    border-top: 0.5px solid #c6c6c6;
+    text-align: center;
+    min-height: 175px;
+}
+
+footer > h2
+{
+    padding-top: 40px;
+}
+
+footer > a > img
+{
+    width: 35px;
+    filter: grayscale(100%);
+    padding: 15px 5px 0 5px;
+}
+
+footer > a > img
+{
+    transition: 150ms all ease-in-out;
+}
+
+footer > a > img:hover
+{
+    filter: none;
+}
